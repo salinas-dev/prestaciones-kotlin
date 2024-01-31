@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/arrugado">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/barlowsemibolditalic"
+        android:text="COMPAÑIA FREDY's PRESTACIONES"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:text="Ingrese el nombre"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txnombre"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nombre"
+                android:gravity="center"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:gravity="center"
+                android:text="Ingrese el Año"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txanio"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Año"
+                android:gravity="center"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Ingrese el Salario por mes"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txsalario"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/sueldo"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/barlowsemibolditalic"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:text="INGRESE LOS DIAS NO TRABAJADOS DE LOS MESES"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txEnero"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Enero"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txFebrero"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Febrero"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txMarzo"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Marzo"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txAbril"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Abril"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txMayo"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Mayo"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txJunio"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Junio"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txJulio"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Julio"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txAgosto"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Agosto"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txSeptiembre"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Septiembre"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txOctubre"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Octubre"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txNoviembre"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:hint="Noviembre"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txDiciembre"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/barlowsemibolditalic"
+                        android:hint="Diciembre"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btcalcu"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:backgroundTint="#8A9A84"
+                android:text="@string/guardar" />
+
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/barlowsemibolditalic"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
